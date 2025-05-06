@@ -1,1 +1,21 @@
+@import "bootstrap/dist/css/bootstrap.rtl.min.css";
+@import "bootstrap-icons/font/bootstrap-icons.css";
+@import "leaflet/dist/leaflet.css";
+
+/* your original styles */
+html,body{height:100%;margin:0;padding:0;direction:rtl;font-family:Tahoma,Arial,sans-serif;}
+#map-container{position:relative;width:100%;height:100vh;}
+#map{width:100%;height:100%;z-index:1;}
+#address-card{position:fixed;right:20px;left:20px;bottom:0;z-index:1000;
+              box-shadow:0 4px 12px rgba(0,0,0,.15);border-radius:10px;}
+#current-address{min-height:48px;margin:15px 0;padding:10px;background:#f8f9fa;border-radius:5px;
+                 display:-webkit-box;-webkit-line-clamp:1;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis;}
+#locate-me-container{position:fixed;right:120px;z-index:9999;}
+#locate-me-btn{border-radius:1.5rem;padding:.5rem .8rem;display:flex;align-items:center;gap:.25rem;
+               box-shadow:0 4px 8px rgba(0,0,0,.2);}
+body.modal-open #locate-me-container{display:none!important;}
+.pin{position:absolute;left:50%;top:50%;margin:-40px 0 0 -6px;width:4px;height:40px;background:#f44336;border-radius:6px;}
+.pin:before{content:"";position:absolute;left:-12px;top:-20px;width:28px;height:28px;background:#f44336;border:4px solid #fff;border-radius:50%;}
+.pin-shadow{display:none;}
+.pin-icon + .leaflet-popup{margin-top:-60px;}
 
