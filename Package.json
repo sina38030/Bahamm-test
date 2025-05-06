@@ -1,1 +1,26 @@
+{
+  "name": "next-leaflet-map",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "next": "14.2.4",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "leaflet": "^1.9.4",
+    "bootstrap": "^5.3.3",
+    "bootstrap-icons": "^1.11.3"
+  },
+  "devDependencies": {
+    "@types/leaflet": "^1.9.6",
+    "eslint": "8.56.0",
+    "eslint-config-next": "14.2.4",
+    "typescript": "^5.4.2"
+  }
+}
 
